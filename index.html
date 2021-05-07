@@ -140,7 +140,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
 
   </li>
   </ul>
@@ -170,6 +170,230 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="Shi Defa">
+      <meta itemprop="description" content="来点小烧烤吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/" class="post-title-link" itemprop="url">B站小电视</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-07 08:57:23 / 修改时间：09:47:51" itemprop="dateCreated datePublished" datetime="2021-05-07T08:57:23+08:00">2021-05-07</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>552</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="1-物料清单"><a href="#1-物料清单" class="headerlink" title="1.物料清单"></a>1.物料清单</h4><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>规格</th>
+<th>数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>0.96寸OLED屏幕</td>
+<td>新版本-白色</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>WIFI模块</td>
+<td>ESP-01S</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>锂电池充电模块</td>
+<td>Type C USB接口</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>USB转TTL下载器</td>
+<td></td>
+<td>1</td>
+</tr>
+<tr>
+<td>5</td>
+<td>自锁开关</td>
+<td>1208YD 直脚</td>
+<td>1</td>
+</tr>
+<tr>
+<td>6</td>
+<td>锂电池</td>
+<td>桔色102535</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h4 id="2-下载程序接线图"><a href="#2-下载程序接线图" class="headerlink" title="2.下载程序接线图"></a>2.下载程序接线图</h4><p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg"></p>
+<h4 id="3-小电视接线图"><a href="#3-小电视接线图" class="headerlink" title="3.小电视接线图"></a>3.小电视接线图</h4><p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E5%B0%8F%E7%94%B5%E8%A7%86%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg"></p>
+<h4 id="4-遇到的问题点及解决方案"><a href="#4-遇到的问题点及解决方案" class="headerlink" title="4.遇到的问题点及解决方案"></a>4.遇到的问题点及解决方案</h4><p>（1）端口不能识别</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB.jpg"></p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB-1.jpg"></p>
+<p>问题描述：打开arduino工具，端口无法选择</p>
+<p>问题查找：打开设备管理器，端口驱动出现问题</p>
+<p>解决方案：</p>
+<p>①安装驱动</p>
+<p>驱动网盘下载：</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/17o4mznuD_ch0bvptXykw8Q">https://pan.baidu.com/s/17o4mznuD_ch0bvptXykw8Q</a><br>提取码：vmqw<br>②打开设备管理器，右键”端口（COM和LPT）中对应的USB COM口更新驱动</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092501863.png" alt="image-20210507092501863"></p>
+<p>选择旧版本</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092530282.png" alt="image-20210507092530282"></p>
+<p>完成后返回设备管理器查看已恢复正常</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092625171.png" alt="image-20210507092625171"></p>
+<p>返回arduino，端口可以选择</p>
+<p>（2）编译错误</p>
+<p>查看错误信息，错误原因为aiduino中的库不全，无法识别头文件</p>
+<p>解决方案：</p>
+<p>点击项目–&gt;加载库–&gt;管理库，在库管理器中搜索加载失败的头文件，并安装对应库即可</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092842304.png" alt="image-20210507092842304"></p>
+<p>（3）接线完成后小电视一直卡在开机界面</p>
+<p>小电视接线完成后需要使用手机进行配置，因为过程复现比较麻烦，直接使用B站UP主大鱼DIY的视频截图来说明</p>
+<p>首先连接XiaoKai-IOT-Display，</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094440322.png" alt="image-20210507094440322"></p>
+<p>之后进入配置界面，选择配置wifi</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094650345.png" alt="image-20210507094650345"></p>
+<p>连接可用WIFI即可</p>
+<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094729733.png" alt="image-20210507094729733"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+<div>
+  
+</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://coderfishboy.github.io/2021/05/06/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author.jpg">
+      <meta itemprop="name" content="Shi Defa">
+      <meta itemprop="description" content="来点小烧烤吗">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Myblog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/06/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/" class="post-title-link" itemprop="url">工具清单</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-05-06 15:17:39 / 修改时间：17:16:46" itemprop="dateCreated datePublished" datetime="2021-05-06T15:17:39+08:00">2021-05-06</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.1k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4 id="创意收集整理："><a href="#创意收集整理：" class="headerlink" title="创意收集整理："></a>创意收集整理：</h4><p>1、XMind ZEN(思维导图，zen版本更为简洁)<br>2、Typora(写markdown的编辑器)<br>3、有道云笔记(推荐)、印象笔记、为知笔记、OneNote</p>
+<p>关于markdown：<br>github：readme.md(md=markdown)<br>建议从事技术的同行都掌握的一种文本语言<br>可以在多平台自由遨游，到处分享而无须担心格式</p>
+<h4 id="【电路】"><a href="#【电路】" class="headerlink" title="【电路】"></a>【电路】</h4><p>1、AltiumDesigner(AD)：用于绘制电路板<br>2、eagle(开源硬件界电路设计，偏简单)：转化文件格式<br>3、fritzing(面包板电路示意图绘制等，文章配图)<br>4、allegro、pads(大公司会用的软件(显卡、主板))</p>
+<p>个人补充：绘制简单电路示意图图也可以可以选择网页版TinkerCAD，画电路板这几年有风向kiCAD，也可以试试。</p>
+<h4 id="【结构设计】"><a href="#【结构设计】" class="headerlink" title="【结构设计】"></a>【结构设计】</h4><p>1、Rhinocores(俗称 犀牛)<br>2、Fusion360(良心软件，联系学习)<br>3、Cinema4D<br>4、solidworks(机械相关专业必备)<br>5、UG<br>6、proE<br>渲染：KeyShot<br>矢量图编辑：inkScape<br>雕刻机刀路artCAM<br>3D打印机软件(具体与自己的机器有关)推荐一个Cura</p>
+<h4 id="【软件开发】"><a href="#【软件开发】" class="headerlink" title="【软件开发】"></a>【软件开发】</h4><p>1、宇宙第一IDE ：VisualStudio(C++、openCV)<br>2、ardroidStudio：开发安卓APP<br>3、jetbrain全家桶：JAVA开发<br>4、PyCharm：人生苦短  我用python<br>5、rider：c#开发<br>6、clion：C、C++</p>
+<h4 id="【硬件开发】"><a href="#【硬件开发】" class="headerlink" title="【硬件开发】"></a>【硬件开发】</h4><p>1、keil、cubeMX(51单片机、STM32等)<br>2、arduino IDE(开源硬件扛把子)<br>3、KendrytelIDE(开发K210)</p>
+<p>软件交互，一个画画的编程语言：processing<br>数学仿真：Matlab</p>
+<h4 id="【小工具类】"><a href="#【小工具类】" class="headerlink" title="【小工具类】"></a>【小工具类】</h4><p>linux服务器：XShell、XFtp<br>串口（串口猎人）、网络调试助手（netassist）<br>cmake：跨平台安装编译工具<br>GitGUI：代码版本控制<br>coolformat：代码批量格式化工具<br>ida：反编译<br>WireShark：网络协议分析<br>SerialChart：串口绘图<br>Netron：图形化查看神经网络<br>beyonCompare：代码修改对比</p>
+<p>书桌：TB搜 转角桌<br>键盘：iQunix X86<br>鼠标：罗技Anywhere 2S<br>台灯：宜家长臂台灯<br>电烙铁：白光T12<br>热风枪：金卡思 858<br>数控电源：10MHz数控电源<br>万用表：优利德 UT120C卡片式万用表<br>示波器：DS203袖珍示波器<br>3D打印机：Tevo 3D打印机<br>路由器：小米路由器4 Pro<br>其余很多：自己造的</p>
+
+      
+    </div>
+
+    
+    
+    
+
+<div>
+  
+</div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://coderfishboy.github.io/2021/05/06/hexo%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -195,7 +419,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-06 09:52:20 / 修改时间：10:33:06" itemprop="dateCreated datePublished" datetime="2021-05-06T09:52:20+08:00">2021-05-06</time>
+              <time title="创建时间：2021-05-06 09:52:20 / 修改时间：10:56:43" itemprop="dateCreated datePublished" datetime="2021-05-06T09:52:20+08:00">2021-05-06</time>
             </span>
 
           <br>
@@ -949,7 +1173,7 @@ sql99【推荐使用】
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1002,7 +1226,7 @@ sql99【推荐使用】
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">13k</span>
+    <span title="站点总字数">15k</span>
 </div>
 
 
