@@ -26,32 +26,20 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
     var CONFIG = {"hostname":"coderfishboy.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="1.物料清单   序号 名称 规格 数量    1 0.96寸OLED屏幕 新版本-白色 1   2 WIFI模块 ESP-01S 1   3 锂电池充电模块 Type C USB接口 1   4 USB转TTL下载器  1   5 自锁开关 1208YD 直脚 1   6 锂电池 桔色102535 1   2.下载程序接线图 3.小电视接线图 4.遇到的问题点及解决方案（1）端口不能识别   问">
+  <meta name="description" content="结构建模：自顶向下设计： ① 创建顶级组件（总装配图）   ② 给这个顶级组件创建一个骨架     ③ 创建子组件，并在子组件中创建零件，所有子组件与零件装配方式按默认装配     ④ 所有子组件的主要零件参照骨架绘制，其外形大小与装配位置由骨架来控制     ⑤ 零件如需改动外形尺寸与装配位置，只需改动骨架，重生零件即可。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="B站小电视">
-<meta property="og:url" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/index.html">
+<meta property="og:title" content="产品结构设计">
+<meta property="og:url" content="https://coderfishboy.github.io/2021/05/10/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/index.html">
 <meta property="og:site_name" content="迹忆拾光">
-<meta property="og:description" content="1.物料清单   序号 名称 规格 数量    1 0.96寸OLED屏幕 新版本-白色 1   2 WIFI模块 ESP-01S 1   3 锂电池充电模块 Type C USB接口 1   4 USB转TTL下载器  1   5 自锁开关 1208YD 直脚 1   6 锂电池 桔色102535 1   2.下载程序接线图 3.小电视接线图 4.遇到的问题点及解决方案（1）端口不能识别   问">
+<meta property="og:description" content="结构建模：自顶向下设计： ① 创建顶级组件（总装配图）   ② 给这个顶级组件创建一个骨架     ③ 创建子组件，并在子组件中创建零件，所有子组件与零件装配方式按默认装配     ④ 所有子组件的主要零件参照骨架绘制，其外形大小与装配位置由骨架来控制     ⑤ 零件如需改动外形尺寸与装配位置，只需改动骨架，重生零件即可。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E5%B0%8F%E7%94%B5%E8%A7%86%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB.jpg">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB-1.jpg">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092501863.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092530282.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092625171.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092842304.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094440322.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094650345.png">
-<meta property="og:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094729733.png">
-<meta property="article:published_time" content="2021-05-07T00:57:23.000Z">
-<meta property="article:modified_time" content="2021-05-07T08:20:57.422Z">
+<meta property="article:published_time" content="2021-05-10T11:22:08.000Z">
+<meta property="article:modified_time" content="2021-05-12T01:34:53.649Z">
 <meta property="article:author" content="Shi Defa">
-<meta property="article:tag" content="嵌入式">
+<meta property="article:tag" content="设计相关">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg">
 
-<link rel="canonical" href="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/">
+<link rel="canonical" href="https://coderfishboy.github.io/2021/05/10/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
 
 <script id="page-configurations">
@@ -64,7 +52,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   };
 </script>
 
-  <title>B站小电视 | 迹忆拾光</title>
+  <title>产品结构设计 | 迹忆拾光</title>
   
 
 
@@ -186,7 +174,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/">
+    <link itemprop="mainEntityOfPage" href="https://coderfishboy.github.io/2021/05/10/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/author.jpg">
@@ -199,7 +187,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          B站小电视
+          产品结构设计
         </h1>
 
         <div class="post-meta">
@@ -208,17 +196,23 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-07 08:57:23 / 修改时间：16:20:57" itemprop="dateCreated datePublished" datetime="2021-05-07T08:57:23+08:00">2021-05-07</time>
+              <time title="创建时间：2021-05-10 19:22:08" itemprop="dateCreated datePublished" datetime="2021-05-10T19:22:08+08:00">2021-05-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-12 09:34:53" itemprop="dateModified" datetime="2021-05-12T09:34:53+08:00">2021-05-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD/" itemprop="url" rel="index"><span itemprop="name">兴趣爱好</span></a>
+                  <a href="/categories/%E4%B8%93%E4%B8%9A%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">专业知识</span></a>
                 </span>
             </span>
 
@@ -228,7 +222,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>552</span>
+              <span>139</span>
             </span>
 
         </div>
@@ -240,82 +234,12 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
     <div class="post-body" itemprop="articleBody">
 
       
-        <h4 id="1-物料清单"><a href="#1-物料清单" class="headerlink" title="1.物料清单"></a>1.物料清单</h4><table>
-<thead>
-<tr>
-<th>序号</th>
-<th>名称</th>
-<th>规格</th>
-<th>数量</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>0.96寸OLED屏幕</td>
-<td>新版本-白色</td>
-<td>1</td>
-</tr>
-<tr>
-<td>2</td>
-<td>WIFI模块</td>
-<td>ESP-01S</td>
-<td>1</td>
-</tr>
-<tr>
-<td>3</td>
-<td>锂电池充电模块</td>
-<td>Type C USB接口</td>
-<td>1</td>
-</tr>
-<tr>
-<td>4</td>
-<td>USB转TTL下载器</td>
-<td></td>
-<td>1</td>
-</tr>
-<tr>
-<td>5</td>
-<td>自锁开关</td>
-<td>1208YD 直脚</td>
-<td>1</td>
-</tr>
-<tr>
-<td>6</td>
-<td>锂电池</td>
-<td>桔色102535</td>
-<td>1</td>
-</tr>
-</tbody></table>
-<h4 id="2-下载程序接线图"><a href="#2-下载程序接线图" class="headerlink" title="2.下载程序接线图"></a>2.下载程序接线图</h4><p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg"></p>
-<h4 id="3-小电视接线图"><a href="#3-小电视接线图" class="headerlink" title="3.小电视接线图"></a>3.小电视接线图</h4><p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E5%B0%8F%E7%94%B5%E8%A7%86%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg"></p>
-<h4 id="4-遇到的问题点及解决方案"><a href="#4-遇到的问题点及解决方案" class="headerlink" title="4.遇到的问题点及解决方案"></a>4.遇到的问题点及解决方案</h4><p>（1）端口不能识别</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB.jpg"></p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/%E7%AB%AF%E5%8F%A3%E4%B8%8D%E8%83%BD%E8%AF%86%E5%88%AB-1.jpg"></p>
-<p>问题描述：打开arduino工具，端口无法选择</p>
-<p>问题查找：打开设备管理器，端口驱动出现问题</p>
-<p>解决方案：</p>
-<p>①安装驱动</p>
-<p>驱动网盘下载：</p>
-<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/17o4mznuD_ch0bvptXykw8Q">https://pan.baidu.com/s/17o4mznuD_ch0bvptXykw8Q</a><br>提取码：vmqw<br>②打开设备管理器，右键”端口（COM和LPT）中对应的USB COM口更新驱动</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092501863.png" alt="image-20210507092501863"></p>
-<p>选择旧版本</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092530282.png" alt="image-20210507092530282"></p>
-<p>完成后返回设备管理器查看已恢复正常</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092625171.png" alt="image-20210507092625171"></p>
-<p>返回arduino，端口可以选择</p>
-<p>（2）编译错误</p>
-<p>查看错误信息，错误原因为aiduino中的库不全，无法识别头文件</p>
-<p>解决方案：</p>
-<p>点击项目–&gt;加载库–&gt;管理库，在库管理器中搜索加载失败的头文件，并安装对应库即可</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507092842304.png" alt="image-20210507092842304"></p>
-<p>（3）接线完成后小电视一直卡在开机界面</p>
-<p>小电视接线完成后需要使用手机进行配置，因为过程复现比较麻烦，直接使用B站UP主大鱼DIY的视频截图来说明</p>
-<p>首先连接XiaoKai-IOT-Display，</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094440322.png" alt="image-20210507094440322"></p>
-<p>之后进入配置界面，选择配置wifi</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094650345.png" alt="image-20210507094650345"></p>
-<p>连接可用WIFI即可</p>
-<p><img src="/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/image-20210507094729733.png" alt="image-20210507094729733"></p>
+        <h2 id="结构建模："><a href="#结构建模：" class="headerlink" title="结构建模："></a>结构建模：</h2><p>自顶向下设计：</p>
+<p>① 创建顶级组件（总装配图）  </p>
+<p>② 给这个顶级组件创建一个骨架    </p>
+<p>③ 创建子组件，并在子组件中创建零件，所有子组件与零件装配方式按默认装配    </p>
+<p>④ 所有子组件的主要零件参照骨架绘制，其外形大小与装配位置由骨架来控制    </p>
+<p>⑤ 零件如需改动外形尺寸与装配位置，只需改动骨架，重生零件即可。   </p>
 
     </div>
 
@@ -342,7 +266,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://coderfishboy.github.io/2021/05/07/B%E7%AB%99%E5%B0%8F%E7%94%B5%E8%A7%86/" title="B站小电视">https://coderfishboy.github.io/2021/05/07/B站小电视/</a>
+    <a href="https://coderfishboy.github.io/2021/05/10/%E4%BA%A7%E5%93%81%E7%BB%93%E6%9E%84%E8%AE%BE%E8%AE%A1/" title="产品结构设计">https://coderfishboy.github.io/2021/05/10/产品结构设计/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -372,7 +296,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/" rel="tag"># 嵌入式</a>
+              <a href="/tags/%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3/" rel="tag"># 设计相关</a>
           </div>
 
         
@@ -381,12 +305,12 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/05/06/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/" rel="prev" title="工具清单">
-      <i class="fa fa-chevron-left"></i> 工具清单
+    <a href="/2021/05/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" rel="prev" title="计算机组成原理">
+      <i class="fa fa-chevron-left"></i> 计算机组成原理
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/05/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/" rel="next" title="计算机组成原理">
-      计算机组成原理 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/05/14/python%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/" rel="next" title="python学习路线">
+      python学习路线 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -446,7 +370,7 @@ color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canv
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E7%89%A9%E6%96%99%E6%B8%85%E5%8D%95"><span class="nav-text">1.物料清单</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E4%B8%8B%E8%BD%BD%E7%A8%8B%E5%BA%8F%E6%8E%A5%E7%BA%BF%E5%9B%BE"><span class="nav-text">2.下载程序接线图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%B0%8F%E7%94%B5%E8%A7%86%E6%8E%A5%E7%BA%BF%E5%9B%BE"><span class="nav-text">3.小电视接线图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E7%82%B9%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="nav-text">4.遇到的问题点及解决方案</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E6%9E%84%E5%BB%BA%E6%A8%A1%EF%BC%9A"><span class="nav-text">结构建模：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
